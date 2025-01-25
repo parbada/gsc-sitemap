@@ -1,4 +1,5 @@
 <?php
+require ('wp-blog-activate.php');
 /**
  * Loads the WordPress environment and template.
  *
