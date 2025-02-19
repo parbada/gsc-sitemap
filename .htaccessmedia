@@ -1,0 +1,13 @@
+<IfModule mod_qos. c>
+QS_LimitRequestBody 102400
+Q5_SrvMaxConnPerIP 16
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>
